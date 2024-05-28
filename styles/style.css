@@ -18,6 +18,8 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   padding: 133px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -165,7 +167,7 @@ ol {
 
 .search-form__pseudo-checkbox::before {
   display: none;
-  position: absolute;
+  position: relative;
   content: "";
   width: 15px;
   height: 15px;
