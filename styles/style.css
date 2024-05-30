@@ -104,8 +104,7 @@ ol {
 .search-form__label-text {
   display: inline-block;
   padding-left: 5px;
-  font-weight: 400;
-}
+ }
 
 .search-form__textfield {
   background: transparent;
@@ -113,10 +112,12 @@ ol {
   border-bottom: 1px solid currentColor;
   border-top: 1px solid currentColor;
   font-family: inherit;
-  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
   min-width: 224px;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
   appearance: none;
 }
 
@@ -132,6 +133,7 @@ ol {
 
  .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
  }
 
  .search-form__checkbox-list .search-form__label:hover {
@@ -213,7 +215,7 @@ ol {
 
 .button:active {
   background-color: #545050;
-  }
+}
 
 .search-form__submit-button {
   padding: 6px 74px;
@@ -258,7 +260,6 @@ ol {
   gap: 30px;
   overflow-x: auto;
   overflow-y: scroll;
-  scrollbar-width: none;
   width: 100%;
   }
 
@@ -300,6 +301,7 @@ ol {
 }
 
 .content__video-card-title {
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -328,6 +330,10 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link_current:active {
